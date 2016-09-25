@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@drawable/sunny"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/actividad1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CUIDADOS DE LA PIEL"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:id="@+id/actividad1"
+        android:fontFamily="@string/abc_font_family_display_4_material"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:src="@drawable/right"
+    android:id="@+id/imageView6"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignRight="@+id/actividad1"
+        android:layout_alignEnd="@+id/actividad1" />
+
+    <ImageView
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:src="@drawable/left"
+    android:id="@+id/imageView5"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_alignLeft="@+id/actividad1"
+        android:layout_alignStart="@+id/actividad1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textDescripcion"
+
+        />
+    </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
